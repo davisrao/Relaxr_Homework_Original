@@ -1,0 +1,229 @@
+/*
+Project Name: Relaxr Web Page
+Client: Relaxr
+Author: Davis Rao
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+.clear {
+  clear: both;
+}
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+      background-size: cover;
+}
+h1 {
+  color:white;
+  font-weight: bold;
+  font-size: 32px;
+  font-style:italic;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  height: 500px;
+  background: url(../images/header_bg.jpg)  rgb(134,141,157);
+  background-position: center;
+  background-size: 100% 100%;
+  width:100vw;
+}
+
+.aligncenter{
+  text-align: center;
+}
+.centerspace{
+  margin: 0 auto;
+}
+.spacepadding {
+  padding-top:5vw;
+}
+.buttonspace {
+  border-radius:5px; 
+  padding:12px 0px;
+  }
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+
+.font{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+
+#peace{
+  font-size:36px;
+  color:white;
+  padding: 30px 
+  font-weight: lighter;
+  padding-bottom: 50px;
+  padding-top:50px;
+  word-spacing:3px;
+  width:30vw;
+}
+
+.button{
+  font-size:18px;
+  font-weight:bold;
+  height:50px;
+  width:200px;
+  background: #f9e42e;
+  border:2px solid #121212;
+}
+
+#benefits {
+  background:#f0efef;
+}
+#benefits-head{
+  font-size: 16px;
+  color:#033048;
+  margin-left:2vw;
+}
+.benefits-body{
+  padding-left: 30px;
+  padding-top: 10px;
+  color:#606161;
+  font-size:18px;
+}
+.bullet-text{
+  color:#606161;
+  font-size:14px;
+}
+.benefits-bullets{
+  padding-left: 7vw;
+  padding-bottom: 5vw;
+}
+.bullet{
+  font-size:75%;
+  color:#033048;
+  vertical-align: middle;
+}
+#centerbutton{
+  margin:0 auto;
+}
+#testimony{
+  height: 300px;
+  background: url(../images/testimonial_bg.jpg)  rgb(134,141,157);
+  background-position: center;
+  background-size: 100% 100%; 
+}
+.quote{
+  padding-top:100px;
+  font-size:18px;
+  color: white;
+  width:75vw;
+  font-style: italic;
+}
+.name{
+  color:white;
+  font-weight:bold;
+  font-size:18px;
+}
+#company{
+  font-weight: normal;
+  color: white;
+
+}
+#banner{
+  display:inline-block;
+  height:100px;
+  width:100vw;
+  background:#121212;
+  padding-top:20px;
+}
+#foot-banner{
+  height:300px;
+  width:100vw;
+  background:#606161;
+}
+#footer{
+  font-size: 24px;
+  font-weight: bold;
+  color:#121212;
+  text-align: center;
+}
+.twitter{
+  display:inline-block;
+  margin-left:auto;
+  margin-right:auto;
+  padding-right:10px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (min-width: 992px){
+
+#container {
+  height: 50vw;
+  background: url(../images/header_bg.jpg)  rgb(134,141,157);
+  background-position: center;
+  background-size: 100% 100%;
+}
+h1 {
+  color:white;
+  font-weight: bold;
+  font-size: 48px;
+  margin-left:2cm;
+  font-style:italic;
+  margin-top:20px;
+}
+#peace{
+  font-size: 32px;
+  width:100%;
+}
+#benefits-head{
+  font-size: 36px;
+  color:#033048;
+}
+.benefits-body{
+  padding-left: 76px;
+  padding-top: 10px;
+  color:#606161;
+  font-size:16px;
+  width:100vw;
+}

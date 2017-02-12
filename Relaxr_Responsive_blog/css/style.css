@@ -1,0 +1,304 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+     margin-right:10px;
+}
+.font{
+  font-family: 'Open Sans', sans-serif;
+}
+.high-padding{
+  padding-top:20px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100vw;
+  margin: auto;
+}
+
+header {
+  background:#033048;
+
+
+}
+nav li{
+    float: right;
+    display:none;
+    margin:20px;
+}
+
+li:hover{
+  background:#606161;
+}
+nav li:first-child{
+    display:inline-block;
+    margin:20px;
+}
+.line{
+    height:5px;
+    width:50px;
+    border-radius:5px;
+    background-color: white;
+    margin-right:25vw;
+    margin-top:1px;
+} 
+.logo{
+  margin-left:10px;
+  color:white;
+  font-size:3em;
+  font-weight:normal;
+  float:left; 
+}
+#main-content{
+  margin-left:4px;
+  width:110vw;
+  margin-top:40px;
+}
+.section{
+  border-bottom:solid 2px lightgray;
+}
+.text-title{
+  color:#033048;
+  font-weight semibold;
+  font-size: 24px;
+  width:90vw;
+}
+.image{
+  height:30vw;
+  width:90vw;
+  border:solid 2px #033048;
+}
+.body{
+  color:#606161;
+  font-size:14px;
+  font-weight:light;
+  width:90vw;
+}
+.large-letter{
+   color: #033048;
+  float: left;
+  font-family: Georgia;
+  font-size: 36px;
+  line-height: 30px;
+  padding-right: 8px;
+  padding-left: 3px;
+}
+
+.high-margin{
+  margin-top:40px;
+}
+.read-more{
+  font-weight:bold;
+  font-size:16px;
+  float:right;
+  padding-top:15px;
+}
+.divide{
+  margin-top:40px;
+  width:95vw;
+  height:2px;
+  background:gray;
+}
+#sidebar{
+  padding-top:25px;
+}
+.sidebar-head{
+  display:inline-block;
+  font-weight:bolder;
+  font-size:24px;
+  color:#033048;
+}
+.sidebar-list{
+  font-weight:light;
+  list-style:none;
+  width:60vw;
+}
+.ad{
+  width:25%
+  height:60%;
+}
+#bottom-content{
+  width:100vw;
+  margin:0 auto;
+}
+#banner{
+  width:100vw;
+  height:70px;
+  background:#f9e42e;
+  padding-top:15px;
+}
+.button{
+  background:#033048;
+  color:white;
+  width:50vw;
+  height:40px;
+  text-align:center;
+  font-size:24px;
+  margin:0 auto;
+  padding-top:5px;
+}
+
+footer {
+  height:50vw;
+  width:100vw;
+  background:#121212;
+}
+
+.foot-logo{
+  text-align:center;
+  color:white;
+  font-size:42px;
+}
+.twitter{
+ margin-left:auto;
+ margin-right: auto;
+ padding-right:20px;
+}
+
+.social{
+text-align:center;
+margin-top:20px;
+}
+h6 {
+  color:white;
+
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+@media only screen and (min-width: 992px){
+nav li{
+    float: right;
+    display:inline-block;
+    color:#f9e42e;
+    margin-right:5vw;
+}
+nav li:first-child{
+  display:none;
+}
+
+#main-content{
+  width:65vw;
+  display:inline-block;
+}
+
+.body{
+  width:65vw;
+}
+.image{
+  width: 65vw;
+}
+#sidebar{
+  display:inline-block;
+  float:right;
+  width:20%;
+ padding-left:10px;
+ margin-right:10vw;
+
+}
+
+.sidebar-list{
+  width:100%;
+}
+.sidebar-head{
+  padding-top:25px;
+  font-size:22px;
+}
+.ad{
+  width:100%;
+  border:solid 2px #033048 ;
+  margin-top:25px;
+}
+.divide{
+  width:65vw;
+}
+#banner{
+  width:100%;
+  height:70px;
+  padding-top:15px;
+}
+.button{
+  height:40px;
+  width:400px;
+  border-radius:5px;
+  font-weight:normal;
+ margin:0 auto;
+  font-size:24px;
+}
+footer{
+  width:100%;
+  height:300px;
+
+}
+.read-more{
+  padding-right:50px;
+  padding-top:30px;
+}
+.social{
+  margin-top:20px;
+}
+#footer{
+  text-align:center;
+}
+
+h6 {
+  color:white;
+   margin-top:20px;
+}
+#bottom-content{
+
+  margin-top:50px;
+}
